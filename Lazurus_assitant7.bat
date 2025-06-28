@@ -1,6 +1,6 @@
 @echo off
 
-:: Lazarus Assistant - customized for Aarya Kattal
+:: Lazarus Assistant - customized for (User name)
 
 :: Setup
 setlocal EnableDelayedExpansion
@@ -19,17 +19,17 @@ set "RED=%ESC%[91m"
 set "RESET=%ESC%[0m"
 
 :: User Information
-set "user_name=Aarya Kattal"
-set "birthday=May 1, 2011"
-set "password=NEILGOTNOHUZZ1234"
-set "love_quote=Chutti sirf kaam se nahi hoti, kabhi kabhi zindagi jeene ke liye bhi leni padti hai"
+set "user_name=(Insert youre name here)"
+set "birthday=(Insert your own birthday)"
+set "password=(Insert your own password)"
+set "love_quote=(Insert youre own quote)"
 
 :: Personality Greeting
-set AI_Trait[1]=Efficient and ready to execute, Aarya.
+set AI_Trait[1]=Efficient and ready to execute.
 set AI_Trait[2]=Professional mode active. Awaiting your command.
 set AI_Trait[3]=System aligned. What’s the task today?
 set AI_Trait[4]=Greetings, sir. Ready to conquer the checklist.
-set AI_Trait[5]=Hello Aarya. Efficiency protocol engaged.
+set AI_Trait[5]=Hello. Efficiency protocol engaged.
 set /a rand=%random% %% 5 + 1
 call set greeting=%%AI_Trait[%rand%]%%
 
@@ -319,9 +319,9 @@ echo %DARK%*         %WHITE%UPDATE LOG - LAZARUS ASSISTANT%DARK%       *
 echo %DARK%****************************************%RESET%
 echo.
 echo %CYAN%[June 24, 2025] – v5.0%RESET%
-echo   - Fully customized for Aarya Kattal
+echo   - Fully customized for (user name)
 echo   - Opens study apps in Chrome (Spotify, Teams, Gmail, ChatGPT)
-echo   - Added file upload & summarize feature
+echo   - Chat with you and help
 echo   - Games menu and exam mode improvements
 echo.
 pause
