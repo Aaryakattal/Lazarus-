@@ -1,0 +1,23 @@
+import google.generativeai as genai
+
+def chat():
+    GOOGLE_API_KEY = "AIzaSyDFX4DeL8uUXoHCRxBbMvjvbqJuNBNmLHw"
+    genai.configure(api_key=GOOGLE_API_KEY)
+
+    print("Hello! I'm your personal assistant Lazurus, how can I help you AARYA KATTAL? Type 'exit' to stop.")
+
+    model = genai.GenerativeModel('gemini-1.5-flash')
+
+    while True:
+        user_input = input("> ")
+        if user_input.lower() == "exit":
+            print("Goodbye!")
+            break
+
+        response = model.generate_content(
+            f"You are a helpful assistant. User said: {user_input}"
+        )
+        print(response.text)
+
+if __name__ == "__main__":
+    chat()
