@@ -1,10 +1,10 @@
 import google.generativeai as genai
 
 def chat():
-    GOOGLE_API_KEY = "AIzaSyDFX4DeL8uUXoHCRxBbMvjvbqJuNBNmLHw"
+    GOOGLE_API_KEY = "(insert api key here)"
     genai.configure(api_key=GOOGLE_API_KEY)
 
-    print("Hello! I'm your personal assistant Lazurus, how can I help you AARYA KATTAL? Type 'exit' to stop.")
+    print("Hello! I'm your personal assistant Lazurus, how can I help you (user name)? Type 'exit' to stop.")
 
     model = genai.GenerativeModel('gemini-1.5-flash')
 
